@@ -80,7 +80,7 @@ holder.ondrop = function (e) {
           console.log(coordinates[prop]);
           simple = coordinates[prop];
           simple['path'] = prop;
-          simple['name'] = path.basename(prop);
+          simple['name'] = path.basename(prop).replace(path.extname(prop), '');
           imageList.push(simple);
         }
       }
