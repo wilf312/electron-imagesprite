@@ -1,0 +1,55 @@
+
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+html, body, .holder-wrap {
+  width: 100%;
+  height: 100%;
+  font-family: "Hiragino Maru Gothic W4 JIS2004", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
+
+body:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.15;
+  background: url("https://pbs.twimg.com/media/CyFF8MFUcAES8XQ.jpg") center center no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+
+#holder {
+  width: 300px;
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: background-color 0.2s linear;
+          transition: background-color 0.2s linear;
+}
+
+
+#holder:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+.holder-wrap,
+.holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#vue-app {
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 1.5em;
+  font-size: 16px;
+}

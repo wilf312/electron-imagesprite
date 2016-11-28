@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>sprite sheet tool</title>
+
+<link rel="stylesheet" type="text/css" href="front/layout.css" />
+</head>
+<body>
+
+<div class="holder-wrap">
+  <div class="holder" id="holder"> ここにドラッグ&amp;ドロップ！ </div>
+</div>
+
+<div id="vue-app">
+  <div>{{dataTitle}}</div>
+  <ul>
+    <li v-if="list.length === 0"> no data </li>
+    <li v-for="data in list">
+      {{data.name}} / {{data.type}}
+    </li>
+  </ul>
+</div>
+
+
+<script src="front/main.js"></script>
+
+
+
+</body>
+</html>
