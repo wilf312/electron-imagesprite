@@ -1,5 +1,11 @@
 
 var holder = document.getElementById('holder');
+var config = {
+  fileName: 'sprite',
+  algorithm: 'binary-tree',
+};
+
+
 
 /** hoverエリアにドラッグされた場合 */
 holder.ondragover = function () { return false; };
@@ -43,14 +49,14 @@ holder.ondrop = function (e) {
 
     var firstData = fileList[0]
     var output = firstData.path.replace(firstData.name, '');
-    var outputPathPNG = output+ 'sprite.png';
-    var outputPathCSS = output+ 'sprite.css';
+    var outputPathPNG = output+ config.fileName+ '.png';
+    var outputPathCSS = output+ config.fileName+ '.css';
     console.log('outputPathPNG -> ', outputPathPNG);
 
     // ------ 画像とCSSの生成
     Spritesmith.run({
       src: sprites,
-      algorithm: 'alt-diagonal' // NOTE: ここはコンフィグに持たせてもいいかも
+      algorithm: config.algorithm // NOTE: ここはコンフィグに持たせてもいいかも
     }, function handleResult (err, result) {
       if (err) {
         throw err;

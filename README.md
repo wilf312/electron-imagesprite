@@ -5,7 +5,7 @@
 ```bash
 
 // データ取得
-git clone https://github.com/wilf312/electron-imagesprite.git && electron-imagesprite
+git clone https://github.com/wilf312/electron-imagesprite.git && cd electron-imagesprite
 
 // インストール実行
 npm install && npm start
