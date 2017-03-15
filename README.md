@@ -1,5 +1,7 @@
 # electron-imagesprite
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/wilf312/electron-imagesprite.svg)](https://greenkeeper.io/)
+
 ## 使い方
 
 ```bash
